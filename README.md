@@ -12,4 +12,4 @@
   - `updateComponent`中通过`vm.render`函数生成vnode,这里的render就是用户传入或模板编译的
   - 生成vnode之后将其传递给`vm.update()`生成真实的dom元素,并挂载在页面中,其中的核心是调用web平台传入的`__patch__`方法
 流程图
-![image-20201023115156550](D:/peculiar/module_6/src/image/image-20201023115156550.png)
+![image-20201023115156550](/User/peculiar/module_6/src/image/image-20201023115156550.png)
