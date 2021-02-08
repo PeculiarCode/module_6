@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .wrapper {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+  }
+
+  .hover-zoom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    z-index: 22;
+  }
+
+  .hover-zoom:hover > .circle {
+    height: 25px;
+    width: 50px;
+    transition: all 0.5s ease-in-out;
+    background: red;
+    transform: scale(2);
+    z-index: 0;
+  }
+</style>
+
+<body>
+  <div class="wrapper">
+    <div class="hover-zoom">
+      <div class="circle"></div>
+    </div>
+  </div>
+</body>
+
+</html>
